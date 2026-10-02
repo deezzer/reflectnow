@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReflectNow | Local Pipeline</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-main: #e0e0e0;
+            --accent: #6b21a8; /* Deep purple pulling from the image glow */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 2rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .hero-image {
+            max-width: 220px;
+            width: 100%;
+            height: auto;
+            margin: 0 auto 2.5rem auto;
+            display: block;
+            border-radius: 4px;
+            opacity: 0.85; /* Keeps it slightly subdued for stealth mode */
+            filter: drop-shadow(0 0 15px rgba(107, 33, 168, 0.2));
+        }
+
+        h1 {
+            font-size: 1.1rem;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            font-weight: normal;
+            color: #555;
+        }
+
+        .terminal-box {
+            text-align: left;
+            background: #0a0a0a;
+            border: 1px solid #1a1a1a;
+            padding: 1.5rem;
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: #666;
+            border-left: 2px solid var(--accent);
+        }
+
+        .highlight {
+            color: #aaa;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 4rem;
+            font-size: 0.7rem;
+            color: #333;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Replace 'YOUR_IMAGE_LINK.jpg' with the actual URL/path to the image -->
+    <img src="https://raw.githubusercontent.com/deezzer/reflectnow/refs/heads/main/rn_500x800_face_logo_color.png" alt="Local Telemetry Architecture" class="hero-image">
+
+    <h1>ReflectNow</h1>
+
+    <div class="terminal-box">
+        > PIPELINE STATUS: <span class="highlight">Air-Gapped / Offline</span><br>
+        > DEPLOYMENT: <span class="highlight">Autumn Cohort</span><br>
+        > EXECUTION: <span class="highlight">N=1 Biological Ground Truth</span><br><br>
+        External access denied. Enterprise telemetry array is currently restricted to active on-site physical deployments. Zero network exfiltration active.
+    </div>
+
+    <div class="footer">
+        Sovereign Data Infrastructure | Northern Nevada Operations
+    </div>
+</div>
+</body>
+</html>
